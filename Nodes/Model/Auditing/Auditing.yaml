@@ -1,0 +1,76 @@
+Name: Auditing
+Id: g=d984c29c9d56061d762dc4cc2ed1b363
+Type: FolderType
+Children:
+- Name: Variable1
+  Type: BaseDataVariableType
+  DataType: Boolean
+- Name: Variable2
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: Variable3
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "0"
+- Name: Confim_Variable
+  Type: BaseDataVariableType
+  DataType: Int32
+  Children:
+  - Name: AuditSigning Signature
+    Type: AuditInfo
+    ReferenceType: NonHierarchicalOwning
+    Children:
+    - Name: Users
+      Type: BaseObjectType
+    - Name: Groups
+      Type: BaseObjectType
+    - Name: WorkflowType
+      Type: PropertyType
+      DataType: WorkflowType
+- Name: Sign_Variable
+  Type: BaseDataVariableType
+  DataType: Int32
+  Children:
+  - Name: AuditSigning Signature
+    Type: AuditInfo
+    ReferenceType: NonHierarchicalOwning
+    Children:
+    - Name: Users
+      Type: BaseObjectType
+    - Name: Groups
+      Type: BaseObjectType
+    - Name: WorkflowType
+      Type: PropertyType
+      DataType: WorkflowType
+      Value: 1
+- Name: Double_Variable
+  Type: BaseDataVariableType
+  DataType: Int32
+  Children:
+  - Name: AuditSigning Signature
+    Type: AuditInfo
+    ReferenceType: NonHierarchicalOwning
+    Children:
+    - Name: Users
+      Type: BaseObjectType
+    - Name: Groups
+      Type: BaseObjectType
+    - Name: WorkflowType
+      Type: PropertyType
+      DataType: WorkflowType
+      Value: 2
+- Name: Bool_Var
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Children:
+  - Name: AuditSigning Signature
+    Type: AuditInfo
+    ReferenceType: NonHierarchicalOwning
+    Children:
+    - Name: Users
+      Type: BaseObjectType
+    - Name: Groups
+      Type: BaseObjectType
+    - Name: WorkflowType
+      Type: PropertyType
+      DataType: WorkflowType

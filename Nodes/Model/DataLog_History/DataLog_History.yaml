@@ -1,0 +1,24 @@
+Name: DataLog_History
+Id: g=1e29481bbf41566aab6ce4df3387ff51
+Type: FolderType
+Children:
+- Name: To_DateTime
+  Id: g=e92b0060c6c237c65925f1d196e7c74e
+  Type: BaseDataVariableType
+  DataType: DateTime
+  Value: "2024-01-01T00:00:00.0000000"
+- Name: From_DateTime
+  Id: g=bdf4187c4062075d3a31e09cb9d9d3e7
+  Type: BaseDataVariableType
+  DataType: DateTime
+  Value: "2024-01-01T00:00:00.0000000"
+- Name: StartingPath
+  Id: g=1241b1bac28b9fa6b557113ff15622fa
+  Type: BaseDataVariableType
+  DataType: AbsoluteResourceUri
+  Value: "%PROJECTDIR%\\"
+- Name: SelectedFilePath
+  Id: g=70fb6c45dd8da03b6ea502595b75b341
+  Type: BaseDataVariableType
+  DataType: AbsoluteResourceUri
+  Value: "%PROJECTDIR%\\"

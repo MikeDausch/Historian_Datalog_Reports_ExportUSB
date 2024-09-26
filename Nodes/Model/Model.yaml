@@ -1,0 +1,6 @@
+Name: Model
+Type: ModelCategoryFolder
+Children:
+- File: Auditing/Auditing.yaml
+- File: DataLog_History/DataLog_History.yaml
+- File: PDF_Report/PDF_Report.yaml

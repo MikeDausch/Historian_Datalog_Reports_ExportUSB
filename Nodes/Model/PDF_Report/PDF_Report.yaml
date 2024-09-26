@@ -1,0 +1,14 @@
+Name: PDF_Report
+Id: g=0315c20f4fb2657140a154e7853fd1e4
+Type: FolderType
+Children:
+- Name: SelectedFilePath
+  Id: g=76ee1fc0ec6531f0a0b41fdaadb6e08f
+  Type: BaseDataVariableType
+  DataType: AbsoluteResourceUri
+  Value: "%PROJECTDIR%\\"
+- Name: StartingPath
+  Id: g=b95da940d920a609b3c600761b73db63
+  Type: BaseDataVariableType
+  DataType: AbsoluteResourceUri
+  Value: "%PROJECTDIR%\\"

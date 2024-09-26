@@ -1,0 +1,7 @@
+Name: ns=4;Dynamic
+Id: ns=4;s=Demo.Dynamic
+Type: FolderType
+DisplayName: {"LocaleId":"","Text":"001_Dynamic"}
+ReferenceType: Organizes
+Children:
+- File: Scalar/Scalar.yaml

@@ -1,0 +1,217 @@
+Name: DataStores
+Type: DataStoresCategoryFolder
+Children:
+- Name: Process_DB_Embedded
+  Id: g=ea5e4346d7adddddaae952d6c0a5f05f
+  Type: SQLiteStore
+  Children:
+  - Name: Tables
+    Type: BaseObjectType
+    Children:
+    - Name: AlarmsEventLogger1
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=15;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=15;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=15;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=15;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: ActiveState_Id
+          Type: StoreColumn
+          DataType: Boolean
+        - Name: AckedState_Id
+          Type: StoreColumn
+          DataType: Boolean
+        - Name: ConfirmedState_Id
+          Type: StoreColumn
+          DataType: Boolean
+        - Name: ConditionName
+          Type: StoreColumn
+          DataType: String
+        - Name: EnabledState_Id
+          Type: StoreColumn
+          DataType: Boolean
+        - Name: SourceName
+          Type: StoreColumn
+          DataType: String
+        - Name: Time
+          Type: StoreColumn
+          DataType: UtcTime
+        - Name: 'Message_en-US'
+          Type: StoreColumn
+          DataType: String
+        - Name: Severity
+          Type: StoreColumn
+          DataType: UInt16
+        - Name: LocalTime
+          Type: StoreColumn
+          DataType: DateTime
+    - Name: AuditEventLogger
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=15;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=15;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=15;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=15;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: EventType
+          Type: StoreColumn
+          DataType: String
+        - Name: SourceName
+          Type: StoreColumn
+          DataType: String
+        - Name: Time
+          Type: StoreColumn
+          DataType: UtcTime
+        - Name: ClientUserId
+          Type: StoreColumn
+          DataType: String
+        - Name: 'Status_en-US'
+          Type: StoreColumn
+          DataType: String
+        - Name: MethodName
+          Type: StoreColumn
+          DataType: String
+        - Name: RecipeName
+          Type: StoreColumn
+          DataType: String
+        - Name: LocalTime
+          Type: StoreColumn
+          DataType: DateTime
+        - Name: ValueChange
+          Type: StoreColumn
+          DataType: String
+        - Name: SourceNode
+          Type: StoreColumn
+          DataType: String
+        - Name: ClientUserNote
+          Type: StoreColumn
+          DataType: String
+        - Name: SecondClientUserId
+          Type: StoreColumn
+          DataType: String
+        - Name: SecondClientUserNote
+          Type: StoreColumn
+          DataType: String
+        - Name: SignResult
+          Type: StoreColumn
+          DataType: SignResult
+    - Name: Process_Data
+      Id: g=04c3189ef9850224b1f047ced227e4f6
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=15;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=15;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=15;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=15;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+        - Name: Boolean
+          Type: StoreColumn
+          DataType: Boolean
+        - Name: Byte
+          Type: StoreColumn
+          DataType: Byte
+        - Name: SByte
+          Type: StoreColumn
+          DataType: SByte
+        - Name: LocalTimestamp
+          Type: StoreColumn
+          DataType: DateTime
+  - Class: Reference
+    Target: ns=33;i=30
+    Direction: Forward
+  - Class: Reference
+    Target: ns=33;i=33
+    Direction: Forward
+  - Name: MaxColumnNameLength
+    Type: BaseDataVariableType
+    DataType: UInt32
+    AccessLevel: Read
+  - Name: MaxColumnCount
+    Type: BaseDataVariableType
+    DataType: UInt32
+    AccessLevel: Read
+  - Name: DataTypeCompatibilityMap
+    Type: BaseDataVariableType
+    DataType: NodeId
+    AccessLevel: Read
+    ValueRank: OneOrMoreDimensions
+    ArrayDimensions: [0,0]
+  - Name: Status
+    Type: PropertyType
+    DataType: StoreStatus
+    AccessLevel: Read
+    Value: 2
+  - Class: Reference
+    Target: ns=15;i=22
+    Direction: Forward
+  - Class: Reference
+    Target: ns=15;i=6
+    Direction: Forward
+  - Class: Reference
+    Target: ns=15;i=8
+    Direction: Forward
+  - Class: Reference
+    Target: ns=15;i=25
+    Direction: Forward
+  - Class: Reference
+    Target: ns=15;i=38
+    Direction: Forward
+  - Class: Reference
+    Target: ns=15;i=41
+    Direction: Forward
+  - Class: Reference
+    Target: ns=15;i=44
+    Direction: Forward
+  - Class: Reference
+    Target: ns=15;i=53
+    Direction: Forward
+  - Class: Reference
+    Target: ns=15;i=55
+    Direction: Forward
+  - Class: Reference
+    Target: ns=15;i=57
+    Direction: Forward
+  - Class: Reference
+    Target: ns=15;i=59
+    Direction: Forward
+  - Name: InMemory
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: Filename
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Process_DB"

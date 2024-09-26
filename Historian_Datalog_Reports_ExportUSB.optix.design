@@ -1,0 +1,58 @@
+Project:
+ Name: Historian_Datalog_Reports_ExportUSB_Design
+ ProjectNamespaceIndex: 12
+ Description: ''
+ Company: ''
+ Copyright: ''
+ FormatVersion: 1
+ ProductVersion: 1.4
+ CoreVersion: 3.0
+ Dependencies:
+  2:
+   Uri: Historian_Datalog_Reports_ExportUSB
+   RelativePath: Historian_Datalog_Reports_ExportUSB.optix
+  3:
+   Uri: '89962f785837450a04c47d6c46a3b5ea#http://opcfoundation.org/UA/DI/'
+   ServerUri: 89962f785837450a04c47d6c46a3b5ea
+  4:
+   Uri: '89962f785837450a04c47d6c46a3b5ea#http://PLCopen.org/OpcUa/IEC61131-3/'
+   ServerUri: 89962f785837450a04c47d6c46a3b5ea
+  5:
+   Uri: '89962f785837450a04c47d6c46a3b5ea#http://www.unifiedautomation.com/DemoServer/'
+   ServerUri: 89962f785837450a04c47d6c46a3b5ea
+  6:
+   Uri: '89962f785837450a04c47d6c46a3b5ea#urn:146R0Z2.ra-int.com:UnifiedAutomation:UaDemoServerAnsiC'
+   ServerUri: 89962f785837450a04c47d6c46a3b5ea
+  7:
+   Uri: 'urn:FTOptix:CoreBase'
+   Module: FTOptix.CoreBase
+   Version: 4.0
+  8:
+   Uri: 'urn:FTOptix:CoreBase:Net'
+   Module: FTOptix.CoreBase.Net
+   Version: 1.1
+  9:
+   Uri: 'urn:FTOptix:TagImporter'
+   Module: FTOptix.TagImporter
+   Version: 1.0
+  10:
+   Uri: 'urn:FTOptix:OPCUAImporter'
+   Module: FTOptix.OPCUAImporter
+   Version: 1.0
+  11:
+   Uri: 'urn:FTOptix:NetLogic'
+   Module: FTOptix.NetLogic
+   Version: 3.0
+ Statistics:
+  TotalNodeCount: 4
+  Objects: 1
+  ObjectTypes: 0
+  Variables: 3
+  VariableTypes: 0
+  DataTypes: 0
+  Methods: 0
+  References: 0
+  ReferenceTypes: 0
+  Files: 1
+ Nodes:
+ - File: 'DesignTimeNodes/OPC-UA/OPCUAClient1/OPCUATagImporter.yaml'
